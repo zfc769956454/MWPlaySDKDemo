@@ -1,0 +1,13 @@
+/*
+ InfoPlist.strings
+ BaiKeMiJiaLive
+ 
+ Created by neghao on 2017/4/19.
+ Copyright © 2017年 facebac.com. All rights reserved.
+ */
+CFBundleDisplayName = "YEEPO";
+NSCameraUsageDescription="Used to take a photo as a portrait or a cover for live, and access the camera while shooting video";
+NSMicrophoneUsageDescription="Used to capture voices at the same time when recording videos";
+NSContactsUsageDescription="Used to match friends on the yeepo server via your phone contacts (access to Contacts is for matching purposes only, it will not save your contacts, and will not be used in other ways)";
+NSPhotoLibraryUsageDescription="Used to select photos from albums for setting personal avatars, live covers, upload and publish videos";
+

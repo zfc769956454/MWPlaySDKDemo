@@ -1,0 +1,27 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - MRDLNA (0.1.1):
+    - CocoaAsyncSocket
+    - MRDLNA/MRC (= 0.1.1)
+  - MRDLNA/MRC (0.1.1):
+    - CocoaAsyncSocket
+  - ZFCChainedCreater (1.0.2)
+
+DEPENDENCIES:
+  - MRDLNA (~> 0.1.1)
+  - ZFCChainedCreater (~> 1.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - MRDLNA
+    - ZFCChainedCreater
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  MRDLNA: 3fe35c6ac57c946413d07896faeb9101c4d8853d
+  ZFCChainedCreater: ccdd3ae4a3569d2ec1eff7cbffb7d4e6bc82a3ca
+
+PODFILE CHECKSUM: 47360f02586f80f58d87c4a1582b05d75a009b78
+
+COCOAPODS: 1.6.0.beta.1

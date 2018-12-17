@@ -1,0 +1,11 @@
+framework module HunHeFramework {
+  umbrella header "HunHeFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module HunHeFramework.Swift {
+    header "HunHeFramework-Swift.h"
+    requires objc
+}

@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  MWPlaySDKDemo
+//
+//  Created by mac on 2018/11/19.
+//  Copyright © 2018年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "MWCommonHeader.h"
+#import "WMLiveConfig.h"
+#import "ZFC_ChainedCreaterHeader.h"
+#import "BKMacroDefineHeader.h"
+#import "MWEnumHeader.h"
+#import "MWCommonConstHeader.h"
+
+
+
+#endif /* PrefixHeader_pch */

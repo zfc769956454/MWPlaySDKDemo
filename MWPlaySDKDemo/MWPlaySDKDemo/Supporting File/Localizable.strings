@@ -1,0 +1,705 @@
+/*
+ Localizable.strings
+ MontnetsLiveKing
+ 
+ Created by lzp on 2017/12/19.
+ Copyright © 2017年 facebac.com. All rights reserved.
+ */
+
+
+
+/*
+ 通用
+ */
+"wechat"="WeChat";
+"moments"="Moments";
+"weiBo"="Weibo";
+"QQ"="QQ";
+"QZone"= "QQ space";
+"cancel"="Cancel";
+"continueLive"="Continue to live";
+"copyLink"="Copy link";
+"copyFail"="Replication Failed";
+"edit"="Editor";
+"delete"="Delete";
+"deleteFail"="Delete Failed";
+"deletesuc"="Delete Success";
+"deleting"="is deleting ...";
+"sureToDelete"="Confirm deletion";
+"encryption"="encryption";
+"payment"="pay";
+"free"="free";
+"montNumber"="ID";
+"shareTo"="Share to";
+"shareFail"="Sharing failure";
+"shareSuccess"="分享成功";
+"shareDone"="分享完成";
+"sharing"="Sharing";
+"report"="Reporting";
+"comfirm"="OK";
+"save"="Save";
+"takePhoto"="Photograph";
+"selPhotoFromLibary"="Choose from mobile Phone album";
+"send"="Sent";
+"continue"="continue";
+"nickName"="nickname";
+"ID"="ID";
+"desc"="Introduction";
+"loading"="Loading";
+"networkError"="Network does not give force";
+"networkFail"="Network exception, please check the network";
+"commit"="submit";
+"phoneNumber"="mobile number";
+"add"="Add";
+"companyName"="SHENZHEN MONTERNET BAC INFORMATION TECHNOLOGY.,LTD .";
+"usage"="Use";
+"back"="Return";
+"balanceNotEnough"="Insufficient balance";
+"done"="Done";
+"OK"="OK";
+"skip"="skip";
+"known"="know";
+"concernFail"="follow failure";
+"cancelConcernFail"="Cancel follow failure";
+"recordVerify"="video is under review";
+"videoDeleted"="video deleted";
+"orderDeleted"="notice deleted";
+"noMore"="- no more -";
+"failed"="failed";
+"warmTips"="Warm tips";
+"YES"=" YES ";
+"NO"=" NO ";
+"networkTips"="Network hints";
+"Internet_offine"="The Internet connection appears to be offine";
+"share"="share";
+"yearAgo"="%ld year ago";
+"monthAgo"="%ld months ago";
+"dayAgo"="%ld days ago";
+"hourAgo"="%ld hours ago";
+"minuteAgo"="%ld minutes ago";
+"justNow"="Just";
+"shareDesc"="快来围观我的精彩直播吧!";
+"goSetting"="Go Setting";
+"verificationCodeErroe"="验证码错误!";
+"networkRemind"="网络提示";
+"isWIFIKeepWatch"="当前为非WiFi环境\n是否使用流量观看视频";
+"pausePlay"="暂停播放";
+"continuePlay"="继续播放";
+"next"="下一步";
+"commit"="提交";
+"experienceNow"="ExperienceNow";
+
+
+/*
+ 登录页面
+ */
+"login"="Login";
+"inputNumber"="Please enter mobile phone number";
+"inputCode"="Please enter code";
+"queryCode"="Code";
+"queryCodeAgain"="Code";
+"queryCodeLater"="Resend after%dS";
+"otherLoginType"="Other login mode";
+"loginAggrement"="login means you have agreed to the user agreement";
+"sendSuc"="Send Success";
+"sendFail"="Send Failure";
+"loginSuccess"="登录成功";
+"inputRightPhoneNum"="请输入正确的手机号码";
+
+/*
+ 举报
+ */
+"reportType"="Please select the type of report";
+"reportAd"="Advertising Deception";
+"reportPorn"="Obscene pornography";
+"reportAbuse"="Harassment insults";
+"reportPolitics"="Reactionary politics";
+"reportRumor"="The rumor is not in conformity with the facts";
+"reportOther"="Other content";
+
+
+/*
+ 个人中心
+ */
+"myWallet"="My wallet";
+"myMongBi"="my dream coins";
+"dummyWallet"="Dummy Wallet";
+"liveBalance"="live balance";
+"wantToPush"="Stream";
+"suggestion"="Feedback";
+"setting"="Settings";
+"quitLogin"="logout";
+"montIcon"="dream coins";
+"montBean"="dream beans";
+"charge"="recharge";
+"chargeRecord"="Recharge";
+"recGiftRecord"="Receive";
+"sendGiftRecord"="Send";
+"chargeTips"="Recharge Amount";
+"chargeMoney"="Recharge Amount";
+"left_balance"="balance";
+"yuan"="¥";
+"chargeAggrement"="User Recharge agreement";
+"readAndAgree"="I have read and agreed";
+"charging"="buying, please do not leave";
+"historyCharge"="Historical Bill (¥)";
+"smsCharge"="SMS Consumption";
+"liveCharge"="direct service charge";
+"videoRate"="frame rate";
+"rtmpAddr"="Please input the live URL RTMP://";
+"startPush"="Start to push the stream";
+"enterPushAddr"="Please enter the live URL ";
+"reportPlaceholder"="Welcome feedback on any comments and questions, your feedback is also the driving force for our progress!";
+"contactMe"="Contact method";
+"contactMePlaceholder"="mobile phone number/mailbox, convenient for us to contact you";
+"accountSafe"="Account and security";
+"noBinding"="Unbound";
+"banded"="Bound";
+"MultiPlatformLive"="Multi-platform Live";
+"thridPush"="third party live streaming";
+"liveCode"="Live Code";
+"clearCache"="Clear cache";
+"sureToCleanCache"="OK to empty cached data？";
+"aboutUS"="About us";
+"appName"="YEEPO";
+"appCopyRight"="YEEPO app licensing and service agreement";
+"sureToLoginout"="exit login";
+"withdraw"="Present";
+"updateProductInfo"="Updating commodity information ...";
+"myBalance"="my balance (¥)";
+"createTrade"="Create Transaction ...";
+"reloginAndCharge"="Your login has expired, please login again and recharge!";
+"failToLaunchWX"="can not adjust the micro-letter client!";
+"trading"="Transaction ...";
+"createTradeFail"="Create Order Failed";
+"tradeSuc"="Successful Transaction";
+"tradeFail"="Transaction failure";
+"languageTitle"="Language";
+"language"="Language";
+"changeLanguageTitle"="Setting Language...";
+"dummy_mongbi"="virtual currency (dream coins)";
+"dummy_mongdou"="virtual income (dream beans)";
+"liveBalance"="live balance (¥)";
+"noRecord"="No record";
+
+
+//绑定
+"bindingSuccess"="Bind succeeded";
+"bindingFailAlreadyWeibo"="Binding failed, the Weibo has been bound!";
+"bindingFailAlreadyWechat"="Binding failed, the Wechat has been bound!";
+"bindingFail"="Binding failed!";
+"sureDeletePushUrl"="Are you sure you want to delete this live URL?";
+"Unbind"="Unbind";
+"UnbindSuccess"="Unbind Success";
+"UnbindFail"="Unbind Fail";
+"Unbinding"="Unbinding";
+"UnbindSuccessInfo"="Successfully bound，You can login to app via %@ account";
+"currentPhoneNO"="Current phone number：";
+"PlaseInputBindNO"="Please enter the phone number to bind";
+"sendSms"="Send the code";
+"plaseInputValidNO"="Please enter a valid phone number";
+"resetSend"="Resend";
+"plaseInputCode"="Please enter the code";
+"afterSecGet"="%ldS后再次获取";
+"bind"="绑定";
+"bindRemind"="绑定手机能提升您的账号安全";
+"bindPhoneNum"="绑定手机号";
+"continueBind"="继续绑定";
+"phoneNumLogin"="手机号登录";
+"binding"="正在绑定";
+"alreadyBinding"="已绑定%@";
+"unbingdingRemind"="确定解除绑定吗?";
+"changePhoneNumber"="更换手机号";
+"changePhoneSuccess"="更换成功";
+"pleaseInputValidCode"="请输入正确的验证码";
+
+
+
+//多平台直播
+"pleaseInputInfo"="Please enter the relevant information";
+"pleaseValidLiveCode"="Please enter the correct live code";
+"pleaseInputEditInfo"="Please enter the content you want to modify";
+"updataSuccess"="update completed";
+"updataFail"="Update failed";
+"settingSuccess"="Set successfully";
+"settingFail"="Setup failed";
+"pushUrlFormatError"="live URL input format error";
+"pushUrlNonull"="请输入推流地址";
+"pleaseValidPushUrl"="Please enter the correct live URL";
+"noSetPushAddress"=" Have not set the live URL!";
+
+
+
+/*
+ 首页
+ */
+"myConcernTitle"="我关注的人(%@)";
+"homePage"="Home";
+"startLive"="Initiated";
+"personCenter"="Me";
+"liveHall"= "Lobby";
+"liveTrack"="Footprint";
+"upToDate"="Newest";
+"liveHot"="Hot";
+"myLive"="My live";
+"watchHistory"="Historical viewing";
+"myConcern"="My follows";
+"addConcern"="Follow";
+"searchPlaceholder"="Search live title, mobile phone number, nickname, cloud broadcast number";
+"searchPlaceholder1"="input to pay attention to the user mobile phone number, nickname, cloud broadcast number";
+"searchTip"="Everyone is searching:";
+"noAuthorToAccessContact"="YEEPO does not have access to your Contacts";
+"alloewAccessContact"="You can enter the system \"settings-privacy-Contacts\" \n allow the \"dream Web Cloud multicast \" Access to your mobile phone Contacts";
+"noContactFriend"=" Contacts is empty";
+"mulitFollow"="friends";
+"contactFriend"="Contacts";
+"releteUser"="Related users";
+"search"="search";
+"relateActive"="Related activities";
+"fetchVideoInfo"="Getting video information...";
+"noSearchResult"="No search results";
+"hot_my_live"="我的\n直播";
+"hot_auto_commend"="智能\n推荐";
+"hot_hot_commend"="热门\n推荐";
+
+
+/**
+ * 个人认证相关
+ */
+"RealNameCertification"="Real name certification";
+"verified_fail"="Audit failure";
+"verified_success"="Congratulations";
+"verified_fail_fail_d"="Your submitted real name certification information has not been approved！";
+"verified_success_d"="Your submitted real-name certification information has been approved！";
+"authent_recommit"="Resubmit";
+"demo2"=" Example 2：";
+"demo1"="Example 1：";
+"pleaseInputName"="please enter your real name";
+"pleaseInputIDCard"="Please input your ID card number";
+"pleaseInputRightIDCard"="Please enter the correct format of ID number";
+"pleaseUpdataHandIDCard"="Upload hand-held ID card front image";
+"pleaseUpdataIDCard"="Please upload the ID card front image";
+"authentNO"="not certified";
+"verifieding2"="verifieding";
+"verified_fail2"="verified fail";
+"verified_ed2"="verified";
+"authentUpdataSuccess"="Your profile has been uploaded successfully";
+"verified_waiting"="Please wait for approval";
+"verifieding"="Real-Name Certification audit";
+"RealNameVerified_fail"="Real-Name Certification failed";
+"verified_ed"="Real-name certification";
+"verified_tips"="1. According to relevant laws and regulations, live, cash withdrawal requires real-name verification does not involve money accounts, authentication information Dream Netcast will be strictly confidential.\n2. Unauthenticated users, the number of viewers will be limited during the live broadcast.";
+"skip"="skip";
+"uploadingImage"="Uploading image(%ld/%ld)...";
+"verified_status"="Failed to get authentication status：%@";
+"uploadSuccessCommmiting"="updload success, commiting...";
+"photoUploadFail"="Photo upload failed";
+"commitFail"="Submission Failed";
+"commitSuccess"="Submitted successfully";
+"IDCardName"="ID card name";
+"IDCardNumber"="ID card number";
+"plaseInputName"="please enter your real name";
+"plaseInputIDNO"="please enter your real name";
+"IDCardUpload"="ID card upload";
+"sureUpload"="confirm submission";
+"verifiedFailCause"="cause:%@";
+
+
+
+/*
+ 个人主页
+ */
+"modifyPersonalData"="Modify personal data";
+"editPersonalData"="Edit personal data";
+"shareToFriend"="Share to friends";
+"myFans"="My fans";
+"conncern"="follows";
+"concerned"="following";
+"cancelConcern"="unsubscribe";
+"concernSuc"="Followed";
+"fans"="Fans";
+"TaConcern"="His attention";
+"TaFans"="His fans";
+"editPortrait"="Editor Head";
+"noDescText"="No introduction";
+"inputNickName"="Please enter a nickname";
+"signAreToLong"="personality signature up to no more than 30 words";
+"nickNameEmpty"="Nickname cannot be empty";
+"nickNameLimit"="Nickname can not be more than15words";
+"uploadPortailFail"="Upload avatar failed!";
+"uploadPortailSuc"="Upload avatar success!";
+"editInfoSuc"="Modify the information successfully!";
+"editInfoFail"="Modify information failed!";
+"noConcernTips"="You haven't paid attention to anyone else";
+"taNoConcernTips"="This user has not yet paid attention to others";
+"noFansTips"="You don't have any fans";
+"taNoFansTips"="This user has no fans";
+
+/*
+ 发起直播
+ */
+"editLiveCorver"="Cover edit";
+"liveTitle"="Live title";
+"liveTitlePlaceholder"="To open a live broadcast";
+"liveStartTime"="Start time";
+"startNow"="Now";
+"viewLimit"="Watch permission";
+"viewLimitTitle"="choose watch permission";
+"limitFreeTips"="Everyone is free to watch";
+"limitWhiteList"="专属直播间";
+"limitWhiteList-D"="该功能请前往梦网云播后台进行设置";
+"limitPayTips"="Need to pay before you can watch";
+"limitPayRange"="Payment range of 1-5000 dream coins";
+"limitPasswordTips"="Need to verify the password before viewing";
+"limitPasswordRange"="Set 4 digit password";
+"liveParam"="Video Configuration";
+"liveDirection"="Video Direction";
+"liveDirectionP"="vertical screen";
+"liveDirectionL"="horizontal screen";
+"liveDefinition"="Clarity";
+"SD"="SD";
+"HD"="HD";
+"HD-def"="HD (Default)";
+"SuperD"="HUD";
+"originalD"="原画";
+"byterate"="bit rate";
+"customVideoConfig"="Custom";
+"low"="lower";
+"meddle"="medium";
+"height"="high";
+"superHeight"="excellent";
+"contentDesc"="Content Introduction";
+"editContent"="edit content";
+"editContentPlaceholder"="Input live content introduction, let the audience in the live details to learn more live information";
+"showInHall"="lobby display";
+"notifyFans"="Notify fans";
+"startToLive"="Start streaming";
+"liveCorverEmpty"="Set a beautiful cover to attract more viewers";
+"createLiveFail"="Create live broadcast failure!";
+"createLiveGetInfoFail"="获取用户信息失败！";
+"unSetting"="Not set";
+"comfirmModify"="Confirm modification";
+"editPlayback"="Edit Playback";
+"editLiving"="Edit Live";
+"editCorver"="Edit cover page";
+"UnEditEnable"="cannot be modified";
+"editing"="Being modified";
+"sureModifyLiveInfo"="Confirm the change of live information？";
+"orderTimeStartAlert"="Your scheduled live broadcast has already been time, go to the air quickly";
+"modifyFail"="Modify viewing permissions failed, please try again";
+"picture"="Photo";
+"createLive"="Create Live";
+"liveTitleEmpty"="Live title can not be empty";
+"createLiving"="is creating live ...";
+"getUserBalance"="获取用户余额...";
+"liveOrdering"="is scheduled to live...";
+"continueLiving"="is continuing to push the stream...";
+"continueLiveFail"="continue push stream failed, please try again";
+"orderFailNoShare"="Reservation information acquisition failed, cannot share";
+"editCorverFail"="Modify cover page failure";
+"passwordErrorTips"="Please enter a 6 digit password";
+"moneyEmpty"="Amount cannot be empty, please enter amount";
+"minBiRange"="Please enter the payment range 1-5000 dream coins";
+"cropFree"="free";
+"getCameraUsageDescription"="请在”设置-梦网云播“中开启相机才能拍照哦~";
+"noCameraAuthO"="没有开启相机权限";
+"openNoticeFans"="开启粉丝通知";
+"noticeFansDesc"="每场直播可发送一次开播提醒\n快召集更多粉丝来围观吧";
+
+/*
+ 余额弹框
+ */
+"balance"=" your balance is (¥)";
+"balanceNotice"=" Note: The source of the balance for the registration and platform recharge \n If you need to recharge, please in the \"Live Balance\" page recharge";
+"liveChargeStandard"="Live charge standard: Each person %@ per minute";
+"balanceToTime"="can also support%@ people to watch%@ minutes";
+"ownerBalanceNotEnough"="The anchor balance is insufficient";
+"arrears"="you have owed the fee";
+"balanceToEndLive"="The balance is insufficient, the direct broadcast automatically closes";
+"goToCharge"="to recharge";
+"autoEndLive"="Live automatic shutdown";
+"goToChargeTips1"="Your live balance is insufficient, can only continue to live for about 30 minutes \n Please recharge your time ~";
+"goToChargeTips2"="The current live broadcast balance is insufficient, quickly to recharge it ~";
+"accountBan"="Your account has been banned because of violation \n If you have questions, please contact Customer service: 0755-26904796";
+"noMoreTips"=" no prompt";
+"lowBalanceTips"="Low Balance Reminder";
+"lowBalanceDesc"="Your current live broadcast balance is below ¥30  \nto ensure direct smooth, please recharge ASAP";
+
+/*
+ 二级详情页
+ */
+"orderNow"="appointment immediately";
+"orderNumber"="Number of appointments";
+"orderSuc"="Successful appointment";
+"chat"="chat";
+"detail"="particulars";
+"rangList"="list";
+"videoList"="录像";
+"sysNotice"="system notice";
+"liveNews"="Live News";
+"video"="video";
+"montId"="ID";
+"keepSlience"="forbidden speech";
+"saySomething"="Say Something";
+"watched"="Seen";
+"onlineNumber"="online";
+"pushAddr"="live URL";
+"linkCopyed"="Link has been copied";
+"copySuc"="Copy successful";
+"continueLiveTips"="live broadcast will not cover the previous content, whether to continue live";
+"sendOut"="Send";
+"keepSlience"="estoppel";
+"unKeepSlience"="Lifting of the ban on speeches";
+"enableSendMsg"="%@ Lifting of the ban on speeches";
+"disabledSendMsg"="%@ Has been banned on speeches";
+"KickoutLiveRoom"="%@Has been kicked out of the room";
+"sendgiftName"="Sent a%@";
+"kickout"="Kick Out of the room";
+"unKickout"="Release kicked out";
+"sureToSlience"="sure to prohibit this user?";
+"sureToUnSlience"="Whether the prohibition is lifted?";
+"sureToKickout"="kicked out of the room, he will not be able to enter the live event, please choose carefully";
+"sureToUnKickout"="Whether to release the kick out?";
+"kickoutRoom"="You have been kicked out of the room ";
+"limitPassword"="enter password";
+"moneyNotEnough"="Your balance is insufficient, cannot watch";
+"anchorNoMoney"="The anchor balance is insufficient, cannot watch";
+"queryTicketFail"="Inquiry to purchase ticket information failed";
+"queryBalanceFail"="Query account balance failure";
+"startLiveAdvance"="whether to start live in advance";
+"reportSuc"="Report submitted";
+"reportFail"="report failed, please try again";
+"passwordError"=" Password input error, please re-enter";
+"goCharge"="go to recharge";
+"paySuc"="payment success!";
+"payFail"="Payment failed!";
+"accountNoMoney"="Insufficient account balance";
+"alreadyBuy"="You have purchased the ticket do not repeat purchase";
+"playComplete"="Play completed ";
+"beKickoutRoom"="You have been kicked out of the room ";
+"playFail"="Playback failed, please check network settings and try again";
+"caching"="is loading please later...";
+"endLiveText"="End live broadcast";
+"startLiveText"="Launch Live";
+"liveAreEnd"="push stream is over";
+"liveError"="push-stream anomaly";
+"pushAtOut"="external push stream";
+"pushWithOtherTool"="In use third party push stream";
+"endLiveFail"="End Failure";
+"orderFail"="Appointment failed";
+"orderSuc"="Appointment has been successful";
+"linkCopySuc"="link copied";
+"noChatMsgYet"="No news yet!";
+"orderSucTips"="Booking success!";
+"singalError"="signal interruption, wait a moment ...";
+"reloadVideo"="重新获取";
+"getVideoFail"="视频获取失败";
+"remindMe"="Please remind me";
+"orderSucDetailTips"="Near the time of the premiere, we will remind you";
+"orderFailDetailTips"="您不在该直播参会人员名单中";
+"alreadyOrder"="Booked";
+"copyLinkError"="Share link copy failed, link is empty!";
+"copyLinkSuc"="Share Link Replication success";
+"liveEndWithNetError"="No network, live interruption!";
+"liveFailWithNetError"="Current network instability, launch live failure!";
+"networkUnReach"="The current network does not give force!";
+"noWifi"=" You are currently using a mobile network, continue live broadcast will generate data traffic";
+"noGiftRecord"="No gifts Received";
+"noVideoTips"="There is no video oh, to launch a live bar!";
+"noLiveTips"="This user has not yet launched a live broadcast";
+"passwordPlaceHolder"="Please enter a password";
+"ticketCodePlaceHolder"="请输入6位数门票号码";
+"replay"="Playback";
+"alreadyStop"="over";
+"orderText"="reservation";
+"authorNotOpen"="Permission is not turned on";
+"mulitConcern"="friends";
+"noHistoryTips"="No record, first go to see the favorite live";
+"liveing"="live";
+"order"="trailer";
+"playback"="video";
+"pushAddressError"="push address error!";
+"ticketCodeError"="门票码输入错误，请重新输入";
+"verifyAuthError"="您没有权限";
+"timeString"="时间";
+"visistCount"="浏览 : %@次";
+"publicString"="免费";
+"ticketCode"="门票码";
+"authority"="权限";
+"stickLabel"="默认回放";
+"switchToOrder"="返回当前预约";
+"switchToLiving"="返回当前直播";
+"switchToVideo"="返回当前回放";
+"switchToRealTime"="返回实时频道";
+"deleteString"="删除";
+"noAuthority"="您尚未获得观看权限";
+"whiteListWatch"="专属直播间观看";
+"whiteListWatchDesc"="您不在该直播参会人员名单中";
+"liveWasEnded"="直播已结束";
+"privateLatter"="私信";
+
+/*
+ 直播间
+ */
+"liveDuration"="Live";
+"watchDuration"="Long Watch";
+"curtOnlineNumber"="online";
+"sureToEndLive"="Determine the end of the live broadcast？";
+"sureToEndPush"="Confirm end push stream?";
+"endLive"="End";
+"continueLiving"="Continue";
+"liveHasEnd"="live broadcast is over";
+"liveStatistics"="The statistics of the field live";
+"watchNumber"="The number of spectators";
+"accountBlance"=" account balance (¥)";
+"roomAudienceLimit"="房间观看人数已达上限";
+"noAuthentication_R"="Host not real name certification, the audience number is limited";
+"watchRestricted"="Watch restricted";
+"watchRestrictedNoEnabled"="operation failed, Watch restricted!";
+"liveOutline"="The live broadcast is offline";
+"getOutOfLine"="Live broadcasts banned due to content violations";
+"inputPwTitle"="Encrypted live";
+"inputPwDesc"="You need to provide a password to view the live broadcast";
+"inputPwTitlePlayback"="Encrypt video";
+"inputPwDescPlayback"="You need to provide a password to view the video";
+"payTitle"="Paid Live";
+"payDesc"="You need to pay to watch the live broadcast";
+"payTitlePlayback"="Paid video";
+"payDescPlayback"="You need to pay to watch the video";
+"balanceTitle"="Insufficient balance";
+"balanceDesc"="The anchor balance is insufficient to view";
+"playbackOffline"="Video is offline";
+"playbackLimit"="Video banned due to content violations";
+"ticketVideoTitle"="门票";
+"ticketVideoDesc"="您需要提供门票号码才可观看该视频";
+"inputTicketCode"="输入门票号码";
+"endLiveTips"="Do you want to end the live?";
+"systemSocketMessage"=" Live System Announcement: Monternet cloud broadcast to promote green, cover and live content containing smoking, vulgar, lure, exposure, etc. will be closed account, Internet police 24-hour online inspection oh!";
+"people"="people";
+"anchorNoMoneyLimit"="主播直播余额不足，观众数量受限";
+"changingDefinition"="正在切换清晰度，请稍候…";
+"changedTo"="已切换至";
+
+/*
+ 短信分享
+ */
+"contact"="Contacts ";
+"message"="SMS";
+"selectFromContact"="Contacts selection";
+"authTips"="prompt";
+"openAuthor"="Read the Contacts can let you send a group of friends to see the live, please in \"Set-privacy-Contacts-YEEPO \"";
+"openAuthorFriend"="\"YEEPO\" want to visit your Contacts to obtain the Contacts permissions, looking for platform friends ";
+"upToNumber"="mobile number increase has reached the upper limit";
+"errorNumber"="The cell phone number is invalid";
+"numberHasAdd"="The number has been added";
+"noCantactPeople"="You have no contact person oh";
+"selectPeople"="Select Recipient";
+"phoneContact"="mobile phone contacts ";
+"manulInput"="Manual input";
+"hasSelected"="%ld people selected";
+"smsPlate"="%@ told you to watch the live broadcast.%@The live broadcast begins at%@. For more information, please click:%@";
+"smsTicketsSharePlate"="【梦网云播】您的好友%@赠送了一张《%@》门票给您，门票码为%@详情点击:%@";
+"smsSendSuc"="SMS notification Success";
+"tiao"="bar";
+"smsNotify"="message notification";
+"consume"="consumption amount";
+"morePhoneNumber"="The user has multiple numbers";
+"smsPreview"="SMS Notification Preview";
+"consumePredict"="Consumption forecast";
+"comfirmSend"="OK send";
+"smsLivePassword"="直播间密码为%@，";
+
+/*
+ 时移
+ */
+"timeShift"="Playback";
+"timeShifting"="In playback";
+"live"="Live";
+"timeShiftRemind"="Drag the progress bar to see the live broadcast, come and try";
+"closeBarrage"="Close the barrage";
+"openBarrage"="Open the barrage";
+"pauseChangeToLive"="Pause time is too long for you to switch to the latest live";
+"noNetWorkNow"="No network currently";
+"trackFrame"="track frame";
+"trackFrameStart"="Starting now, please wait";
+"trackFrameEnd"="has been completed";
+"videoFlag"="video";
+"noSignal"="No signal";
+"timeShifted"="已时移";
+
+/**
+ * 门票
+ */
+"tickets"="门票";
+"ticketsRange"="数量范围%@张";
+"addTickets"="添加门票";
+"make"="生成";
+"preview"="查看";
+"surplusTickets"="剩余张数";
+"AllTickets"="总共%ld";
+"sendedTickets"="已使用%ld";
+"socialShare"="第三方分发";
+"xlsOut"="表格导出";
+"sendTickets"="发送";
+"outputTickets"="导出";
+"sendTicketsType"="%@";
+"makeDoneTickes"="票码已生成";
+"ticketsIsOnly"="需验证门票才可观看";
+"inputTickesAbleNubmer"="还可以添加%@张门票";
+"ticketsShareTitle"="点击领取%@为您送上的门票";
+"ticketsNumberMaxSurplus"="分享的数量不能大于剩余张数！";
+"ticketsPersonMaxSurplus"="门票数量不足，请添加门票后继续发送";
+"ticketsNumberNonnull"="门票数量不能为空，请输入门票数量";
+"ticketsNumberError"="请输入正确的门票数量！";
+"ticketsAlreadyMaxNum" = "您可创建的门票数量已达上限！";
+"addTicketsing"="正在添加门票...";
+"createingTickets"="正在生成门票...";
+"createingXLS"="正在生成XLS文件...";
+"ticketsCode"="门票码";
+"beInvite"="被邀请人";
+"getTicketsFail"="门票生成失败！";
+"ticketsAddFailed"="门票添加失败！";
+"ticketsShareDetail"="门票分享详情";
+"ticketsShare"="门票分享";
+"createLiveToShareTitle"="一 分享到 一";
+"createLiveToShareTitle2"="门票分发";
+"getTicketsFailed"="更新门票失败！";
+"surplusCodeNum"="您最多还可添加%ld张";
+"ticketsOtherShare"="更多";
+"ticketAlreadyUse"="该门票已被使用";
+"ticketAddTip"="单次仅可追加一千，最高可支持五万张";
+
+
+
+/**
+ *足迹
+ */
+"openType_password"="权限：加密";
+"openType_pay"="权限：付费";
+"openType_open"="权限：免费";
+"openType_trackes"="权限：门票";
+"openType_whiteList"="权限：专属直播间";
+"footprint_watchNun_person"="预约：%@人";
+"footprint_watchNun_count"="热度：%@次";
+"footprint_time"="时间：%@";
+"livedend"="直播已结束";
+"videoChecking"="该录像正在人工审核中...";
+"liveOffline"="直播间已下线";
+"liveBan"="因内容违规，直播间已下线";
+"liveNoVideo"="直播无录像";
+"orderExpired"="预告已过期";
+
+
+
+/**
+ *其它
+ */
+"describeTextLenght"="描述文字请保持在300字内";
+"theIphoneNumberExisted"="该手机号已经被注册";
+"getCodeFailed"="获取验证码失败！";
+"getMoneyFailed"="获取余额失败！";
+"currentMoneyDeficiency"="当前余额不足，去充值才可以继续送礼，是否去充值";
+
+
+
+

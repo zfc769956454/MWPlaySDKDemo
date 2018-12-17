@@ -1,0 +1,11 @@
+framework module MWPlaySDK {
+  umbrella header "MWPlaySDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MWPlaySDK.Swift {
+    header "MWPlaySDK-Swift.h"
+    requires objc
+}

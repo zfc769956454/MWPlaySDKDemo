@@ -1,0 +1,29 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+
+
+platform:ios,'8.0'
+inhibit_all_warnings!
+
+targetsArray = ['MWPlaySDKDemo']
+
+project 'MWPlaySDKDemo.xcodeproj'
+
+targetsArray.each do |t|
+    target t do
+        pod 'ZFCChainedCreater', '~> 1.0.2'
+        pod 'MRDLNA','~> 0.1.1'
+    end
+end
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+framework module ZFCChainedCreater {
+  umbrella header "ZFCChainedCreater-umbrella.h"
+
+  export *
+  module * { export * }
+}
