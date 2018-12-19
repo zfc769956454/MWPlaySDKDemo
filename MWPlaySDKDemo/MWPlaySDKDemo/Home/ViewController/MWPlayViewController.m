@@ -1459,17 +1459,20 @@ MWDLNADeviceShowAlertViewDelegate>
 - (void)receiveQuestionnaireReveiveMessage:(MWQuestionnaireReveiveModel *)questionnaireReveiveModel {
     NSLog(@"收到问卷消息");
     _questionnaireReveiveModel = questionnaireReveiveModel;
+    //问卷信息
     NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.questionnaireId);
     NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.date);
     NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.title);
     NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.type);
+    
     for (MWQuestionnaireReceiveQuestionModel *questionModel in questionnaireReveiveModel.topic) {
+        //问题信息
         NSLog(@"questionModel:%@",questionModel.questionId);
         NSLog(@"questionModel:%@",questionModel.number);
         NSLog(@"questionModel:%@",questionModel.question);
 
         for (MWQuestionnaireReceivePQAnswerModel *answerModel in questionModel.options) {
-            
+            //答案信息
             NSLog(@"answerModel:%@",answerModel.optionId);
             NSLog(@"answerModel:%@",answerModel.name);
             NSLog(@"answerModel:%@",answerModel.content);
