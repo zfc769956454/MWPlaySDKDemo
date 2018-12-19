@@ -31,9 +31,9 @@
 		04975E9021C72B7600FDBFAE /* MWDLNADeviceShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04975E8F21C72B7600FDBFAE /* MWDLNADeviceShowAlertView.m */; };
 		049A0F1421ACDC2600CAEDCB /* MWLiveListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A0F1321ACDC2600CAEDCB /* MWLiveListModel.m */; };
 		049A0F1821ACDEC900CAEDCB /* MWHomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A0F1621ACDEC900CAEDCB /* MWHomeListCell.m */; };
-		049A0F1F21ACEB2200CAEDCB /* MWLiveDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A0F1E21ACEB2200CAEDCB /* MWLiveDetailModel.m */; };
 		049A0F2221ACEBE000CAEDCB /* MWVideoListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A0F2021ACEBE000CAEDCB /* MWVideoListModel.m */; };
 		049A0F2521ACEF9100CAEDCB /* MWVideoDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A0F2321ACEF9100CAEDCB /* MWVideoDetailModel.m */; };
+		049DD6F621CA1A7000A8650E /* MWLiveDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 049DD6F421CA1A7000A8650E /* MWLiveDetailModel.m */; };
 		04BA88F721A23E0500BC4D79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA88F621A23E0500BC4D79 /* AppDelegate.m */; };
 		04BA88FD21A23E0500BC4D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA88FB21A23E0500BC4D79 /* Main.storyboard */; };
 		04BA88FF21A23E0800BC4D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA88FE21A23E0800BC4D79 /* Assets.xcassets */; };
@@ -239,12 +239,12 @@
 		049A0F1321ACDC2600CAEDCB /* MWLiveListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWLiveListModel.m; sourceTree = "<group>"; };
 		049A0F1521ACDEC900CAEDCB /* MWHomeListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWHomeListCell.h; sourceTree = "<group>"; };
 		049A0F1621ACDEC900CAEDCB /* MWHomeListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWHomeListCell.m; sourceTree = "<group>"; };
-		049A0F1D21ACEB2200CAEDCB /* MWLiveDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWLiveDetailModel.h; path = ../../../../../../Documents/MWLiveDetailModel.h; sourceTree = "<group>"; };
-		049A0F1E21ACEB2200CAEDCB /* MWLiveDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWLiveDetailModel.m; path = ../../../../../../Documents/MWLiveDetailModel.m; sourceTree = "<group>"; };
 		049A0F2021ACEBE000CAEDCB /* MWVideoListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWVideoListModel.m; sourceTree = "<group>"; };
 		049A0F2121ACEBE000CAEDCB /* MWVideoListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWVideoListModel.h; sourceTree = "<group>"; };
 		049A0F2321ACEF9100CAEDCB /* MWVideoDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWVideoDetailModel.m; sourceTree = "<group>"; };
 		049A0F2421ACEF9100CAEDCB /* MWVideoDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWVideoDetailModel.h; sourceTree = "<group>"; };
+		049DD6F421CA1A7000A8650E /* MWLiveDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWLiveDetailModel.m; sourceTree = "<group>"; };
+		049DD6F521CA1A7000A8650E /* MWLiveDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWLiveDetailModel.h; sourceTree = "<group>"; };
 		04BA88F221A23E0500BC4D79 /* MWPlaySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWPlaySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BA88F521A23E0500BC4D79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04BA88F621A23E0500BC4D79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -986,10 +986,10 @@
 			children = (
 				049A0F2421ACEF9100CAEDCB /* MWVideoDetailModel.h */,
 				049A0F2321ACEF9100CAEDCB /* MWVideoDetailModel.m */,
+				049DD6F521CA1A7000A8650E /* MWLiveDetailModel.h */,
+				049DD6F421CA1A7000A8650E /* MWLiveDetailModel.m */,
 				049A0F2121ACEBE000CAEDCB /* MWVideoListModel.h */,
 				049A0F2021ACEBE000CAEDCB /* MWVideoListModel.m */,
-				049A0F1D21ACEB2200CAEDCB /* MWLiveDetailModel.h */,
-				049A0F1E21ACEB2200CAEDCB /* MWLiveDetailModel.m */,
 				049A0F1221ACDC2600CAEDCB /* MWLiveListModel.h */,
 				049A0F1321ACDC2600CAEDCB /* MWLiveListModel.m */,
 				0460CB7521A78EA100A8E1FF /* Play */,
@@ -1370,6 +1370,7 @@
 				04BA8A5E21A25B3F00BC4D79 /* ViewController+MASAdditions.m in Sources */,
 				04D9DEE521AB7F6B00E2DE4D /* FMDatabasePool.m in Sources */,
 				04BA8A5A21A25B3F00BC4D79 /* MASViewConstraint.m in Sources */,
+				049DD6F621CA1A7000A8650E /* MWLiveDetailModel.m in Sources */,
 				04BA898821A240CA00BC4D79 /* AFSecurityPolicy.m in Sources */,
 				04CA741521A5013A00133B63 /* BKPageScrollSegmentView.m in Sources */,
 				0460CB6C21A78BFD00A8E1FF /* BKPlayBottomView.m in Sources */,
@@ -1402,7 +1403,6 @@
 				04CA741621A5013A00133B63 /* BKPageSegmentStyle.m in Sources */,
 				04BA89C021A240D600BC4D79 /* UIButton+WebCache.m in Sources */,
 				04BA8A1721A2450200BC4D79 /* NSString+append.m in Sources */,
-				049A0F1F21ACEB2200CAEDCB /* MWLiveDetailModel.m in Sources */,
 				04D9DEE721AB7F6B00E2DE4D /* FMResultSet.m in Sources */,
 				04BA898A21A240CA00BC4D79 /* AFURLResponseSerialization.m in Sources */,
 				049A0F2521ACEF9100CAEDCB /* MWVideoDetailModel.m in Sources */,

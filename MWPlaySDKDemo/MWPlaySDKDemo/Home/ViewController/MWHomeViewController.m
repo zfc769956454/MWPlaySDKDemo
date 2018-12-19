@@ -328,10 +328,10 @@
                         
                         playToolControl.isLive  = YES;
                         
-                    }else if(detailModel.liveStatus == 2){ //直播结束,取liveAfter作为播放地址，而且此时是回放状态(这种情况暂时没有清晰度切换)
+                    }else if(detailModel.liveStatus == 2){ //直播结束,取liveAfterUrl作为播放地址，而且此时是回放状态(这种情况暂时没有清晰度切换)
                         
                         MWDefinitionModel *mainDefModel = [MWDefinitionModel new];
-                        mainDefModel.playUrl = detailModel.liveAfter;
+                        mainDefModel.playUrl = detailModel.liveAfterUrl;
                         mainDefModel.playUrl720 = nil;
                         mainDefModel.playUrl480 = nil;
                         playToolControl.mainDefinitionModel = mainDefModel;
@@ -339,7 +339,7 @@
                         
                         if (detailModel.slaveLiveInfo) {
                             MWDefinitionModel *secondaryDefModel = [MWDefinitionModel new];
-                            secondaryDefModel.playUrl = detailModel.slaveLiveInfo[@"liveAfter"];
+                            secondaryDefModel.playUrl = detailModel.slaveLiveInfo[@"liveAfterUrl"];
                             secondaryDefModel.playUrl720 = nil;
                             secondaryDefModel.playUrl480 = nil;
                             playToolControl.secondaryDefinitionModel = secondaryDefModel;
