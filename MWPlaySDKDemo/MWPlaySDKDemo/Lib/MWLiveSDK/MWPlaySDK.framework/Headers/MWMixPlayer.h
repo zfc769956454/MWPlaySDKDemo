@@ -39,7 +39,7 @@
  */
 - (void)seekTo:(NSInteger)value;
 
-/** 获取节目的时间长度，单位秒 */
+/** 获取节目的时间总长度，单位秒 */
 - (CGFloat)getDuration;
 
 /** 获取当前播放的时间，单位秒 */

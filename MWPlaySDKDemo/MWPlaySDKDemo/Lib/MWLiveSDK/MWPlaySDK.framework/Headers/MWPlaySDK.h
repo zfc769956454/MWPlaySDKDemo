@@ -19,12 +19,18 @@ FOUNDATION_EXPORT const unsigned char MWPlaySDKVersionString[];
 
 #import <MWPlaySDK/MWPlayerEnumHeader.h>
 #import <MWPlaySDK/MWMixPlayer.h>
+#import <MWPlaySDK/MWVideoPlayer.h>
+#import <MWPlaySDK/MWPlayerCallbackDelegate.h>
+
 #import <MWPlaySDK/MWSocketLiveinfo.h>
 #import <MWPlaySDK/MWLiveSocketData.h>
 #import <MWPlaySDK/MWLiveSocket.h>
 #import <MWPlaySDK/MWEnvelopeInfoModel.h>
-#import <MWPlaySDK/MWVideoPlayer.h>
-#import <MWPlaySDK/MWPlayerCallbackDelegate.h>
+
+#import <MWPlaySDK/MWQuestionnaireAnswerModel.h>
+#import <MWPlaySDK/MWQuestionnaireReveiveModel.h>
+#import <MWPlaySDK/MWQuestionnaireResultModel.h>
+
 #import <MWPlaySDK/MWSDKConfigHelper.h>
 
 //mj

@@ -13,11 +13,11 @@
 
 /**
  播放器播放状态的回调方法
- @param playerid (播放点播)会传nil
- @param code 回调的各种状态码
- @param player 把播放器本身回调出去
+ @param playerId (播放点播)会传nil
+ @param code 播放器的状态
+ @param player 当前播放器
  */
-- (void)playerCallbackWithMessage:(id)playerid msgCode:(MWCallbackType)code player:(MWVideoPlayer *)player;
+- (void)playerCallbackWithMessage:(id)playerId msgCode:(MWCallbackType)code player:(MWVideoPlayer *)player;
 
 @end
 

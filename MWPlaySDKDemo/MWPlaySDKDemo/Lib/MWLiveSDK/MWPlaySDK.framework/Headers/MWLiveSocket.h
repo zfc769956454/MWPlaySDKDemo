@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MWLiveSocketData.h"
+#import "MWQuestionnaireAnswerModel.h"
+#import "MWQuestionnaireReveiveModel.h"
 
 
 //SOCKET 的连接状态
@@ -39,6 +41,11 @@ static NSInteger const MWliveSocket_deletSingleChatRecord  = 2022;//清除单条
 static NSInteger const MWliveSocket_shutupUserAll          = 2024;//全体禁言
 
 
+static NSInteger const MWliveSocket_questionnaire_receive     = 2121;//收到广播问卷消息
+static NSInteger const MWliveSocket_questionnaire_sendAnswer  = 2123;//用户发送填写后的问卷答案消息
+static NSInteger const MWliveSocket_questionnaire_getResult   = 2125;//获取问卷统计结果消息
+
+
 static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消息
 
 
@@ -47,11 +54,17 @@ static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消
  */
 @protocol MWLiveSocketDelegate <NSObject>
 
-- (void)receiveSocketMessage:(MWLiveSocketData *)scoketData;
+- (void)receiveSocketMessage:(MWLiveSocketData *)scoketData; //出问卷外的消息
+
+- (void)receiveQuestionnaireReveiveMessage:(MWQuestionnaireReveiveModel *)questionnaireReveiveModel; //问卷消息
 
 @end
 
 @interface MWLiveSocket : NSObject
+
+
+/** 是否开启打印 */
+@property (nonatomic,assign) BOOL isPrintSocketInfo;
 
 
 /**
@@ -161,7 +174,7 @@ static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消
 /**
  获取禁言列表
  */
-- (void)getShutupUserList; //2010
+- (void)getShutupUserList;
 
 /**
  禁言用户
@@ -209,6 +222,7 @@ static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消
 - (void)querySilinceUserState:(NSString *)silenceUserID;
 
 
+
 /**
  删除单条聊天记录
  
@@ -219,5 +233,30 @@ static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消
                                     userId:(NSString *)userId;
 
 
+/**
+ 发送问卷答案
+
+ @param nickName 昵称
+ @param userID 用户id 
+ @param questionnaireId 问卷id -- 不能为空
+ @param questionnaireTitle 问卷标题 -- 不能为空
+ @param questionnaireType 问卷类型(single-单选(字符串) multiple-多选(字符串) 目前的设计是一份问卷只有一种题型) -- 不能为空
+ @param questionnaireAnswers 问卷答案(数组) -- 不能为空
+ */
+- (void)sendQuestionnaireAnswerWithNickName:(NSString *)nickName
+                                     userId:(NSString *)userID
+                            questionnaireId:(NSString *)questionnaireId
+                         questionnaireTitle:(NSString *)questionnaireTitle
+                          questionnaireType:(NSString *)questionnaireType
+                       questionnaireAnswers:(NSArray <MWQuestionnaireAnswerModel *>*)questionnaireAnswers;
+
+
+
+/**
+ 获取问卷统计结果
+
+ @param questionnaireId 问卷id
+ */
+- (void)getQuestionnaireResult:(NSString *)questionnaireId;
 
 @end

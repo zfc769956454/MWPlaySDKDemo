@@ -40,6 +40,16 @@
 
 
 /**
+ 发送问卷答案
+ */
+- (void)sendQuestionnaireAnswer;
+
+/**
+ 获取问卷统计结果
+ */
+- (void)getQuestionnaireResult;
+
+/**
  获取历史消息
 
  @param lastMessageID 最后一条消息id

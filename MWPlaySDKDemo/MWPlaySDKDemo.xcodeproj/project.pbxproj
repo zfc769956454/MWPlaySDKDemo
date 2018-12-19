@@ -23,6 +23,9 @@
 		0460CBA921A7FE3800A8E1FF /* BKEndLiveCorverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460CBA821A7FE3800A8E1FF /* BKEndLiveCorverView.m */; };
 		0465129F21BA5FDD000B1DD5 /* MWPlayerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465129E21BA5FDD000B1DD5 /* MWPlayerManger.m */; };
 		0471B64421B92A1500047732 /* BKLandscapePlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0471B64321B92A1500047732 /* BKLandscapePlayView.m */; };
+		0479519B21C8ECF100ECCB69 /* MWPlaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0479519A21C8ECF100ECCB69 /* MWPlaySDK.framework */; };
+		0479519C21C8ECFF00ECCB69 /* MWPlaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0479519A21C8ECF100ECCB69 /* MWPlaySDK.framework */; };
+		0479519D21C8ECFF00ECCB69 /* MWPlaySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0479519A21C8ECF100ECCB69 /* MWPlaySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0486887B21B7C708002E5DEA /* MWPreventScreenRecordingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486887A21B7C708002E5DEA /* MWPreventScreenRecordingScrollView.m */; };
 		0490F0B121AFDC5200BDD9B2 /* MWSecondaryPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0490F0B021AFDC5200BDD9B2 /* MWSecondaryPlayerMaskView.m */; };
 		04975E9021C72B7600FDBFAE /* MWDLNADeviceShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04975E8F21C72B7600FDBFAE /* MWDLNADeviceShowAlertView.m */; };
@@ -140,9 +143,6 @@
 		04CA742E21A5352F00133B63 /* MWCommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA742C21A5352E00133B63 /* MWCommentData.m */; };
 		04CA743121A535CC00133B63 /* MWChatMsgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA742F21A535CC00133B63 /* MWChatMsgCell.m */; };
 		04CA743421A5375100133B63 /* UILabel+MWAttributeTextTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CA743221A5375100133B63 /* UILabel+MWAttributeTextTapAction.m */; };
-		04D6063A21C3580C0053A77A /* MWPlaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6063921C3580C0053A77A /* MWPlaySDK.framework */; };
-		04D6063B21C3581B0053A77A /* MWPlaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6063921C3580C0053A77A /* MWPlaySDK.framework */; };
-		04D6063C21C3581B0053A77A /* MWPlaySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04D6063921C3580C0053A77A /* MWPlaySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04D9A9B521A67EB4000B7423 /* BKEndPlayShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9A9B421A67EB4000B7423 /* BKEndPlayShareView.m */; };
 		04D9A9B821A67EC7000B7423 /* BKMoreViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9A9B721A67EC7000B7423 /* BKMoreViewItem.m */; };
 		04D9A9C121A67F90000B7423 /* UIImage+BKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D9A9BF21A67F90000B7423 /* UIImage+BKExtension.m */; };
@@ -188,7 +188,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				04D6063C21C3581B0053A77A /* MWPlaySDK.framework in Embed Frameworks */,
+				0479519D21C8ECFF00ECCB69 /* MWPlaySDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +228,7 @@
 		0465129E21BA5FDD000B1DD5 /* MWPlayerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPlayerManger.m; sourceTree = "<group>"; };
 		0471B64321B92A1500047732 /* BKLandscapePlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKLandscapePlayView.m; sourceTree = "<group>"; };
 		0471B64521B92A1D00047732 /* BKLandscapePlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKLandscapePlayView.h; sourceTree = "<group>"; };
+		0479519A21C8ECF100ECCB69 /* MWPlaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MWPlaySDK.framework; sourceTree = "<group>"; };
 		0486887921B7C708002E5DEA /* MWPreventScreenRecordingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWPreventScreenRecordingScrollView.h; sourceTree = "<group>"; };
 		0486887A21B7C708002E5DEA /* MWPreventScreenRecordingScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MWPreventScreenRecordingScrollView.m; sourceTree = "<group>"; };
 		0490F0AF21AFDC5200BDD9B2 /* MWSecondaryPlayerMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MWSecondaryPlayerMaskView.h; sourceTree = "<group>"; };
@@ -461,7 +462,6 @@
 		04CA743021A535CC00133B63 /* MWChatMsgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWChatMsgCell.h; sourceTree = "<group>"; };
 		04CA743221A5375100133B63 /* UILabel+MWAttributeTextTapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MWAttributeTextTapAction.m"; sourceTree = "<group>"; };
 		04CA743321A5375100133B63 /* UILabel+MWAttributeTextTapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MWAttributeTextTapAction.h"; sourceTree = "<group>"; };
-		04D6063921C3580C0053A77A /* MWPlaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MWPlaySDK.framework; sourceTree = "<group>"; };
 		04D9A9B321A67EB4000B7423 /* BKEndPlayShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKEndPlayShareView.h; sourceTree = "<group>"; };
 		04D9A9B421A67EB4000B7423 /* BKEndPlayShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKEndPlayShareView.m; sourceTree = "<group>"; };
 		04D9A9B621A67EC7000B7423 /* BKMoreViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMoreViewItem.h; sourceTree = "<group>"; };
@@ -530,10 +530,10 @@
 				04BA895C21A23F2600BC4D79 /* libiconv.tbd in Frameworks */,
 				04BA895A21A23F1E00BC4D79 /* libz.tbd in Frameworks */,
 				04C5BE4E21A292B80009BADD /* libavutil.a in Frameworks */,
-				04D6063B21C3581B0053A77A /* MWPlaySDK.framework in Frameworks */,
+				0479519C21C8ECFF00ECCB69 /* MWPlaySDK.framework in Frameworks */,
 				04C5BE4C21A292B80009BADD /* libavcodec.a in Frameworks */,
 				04BA895821A23F1500BC4D79 /* CoreTelephony.framework in Frameworks */,
-				04D6063A21C3580C0053A77A /* MWPlaySDK.framework in Frameworks */,
+				0479519B21C8ECF100ECCB69 /* MWPlaySDK.framework in Frameworks */,
 				04C5BE4F21A292B80009BADD /* libMWPlayerSDK.a in Frameworks */,
 				04BA895621A23F0E00BC4D79 /* VideoToolbox.framework in Frameworks */,
 				04BA895421A23F0600BC4D79 /* AVFoundation.framework in Frameworks */,
@@ -1034,7 +1034,7 @@
 		04C5BE4221A292B70009BADD /* MWLiveSDK */ = {
 			isa = PBXGroup;
 			children = (
-				04D6063921C3580C0053A77A /* MWPlaySDK.framework */,
+				0479519A21C8ECF100ECCB69 /* MWPlaySDK.framework */,
 				04C5BE4421A292B70009BADD /* libavcodec.a */,
 				04C5BE4521A292B70009BADD /* libavformat.a */,
 				04C5BE4621A292B70009BADD /* libavutil.a */,

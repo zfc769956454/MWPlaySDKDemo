@@ -122,7 +122,8 @@ MWDLNADeviceShowAlertViewDelegate>
 /** 当前DLNA设备的名称 */
 @property (nonatomic, strong) NSString *currentDLNADeviceName;
 
-
+/** 收到问卷model */
+@property (nonatomic, strong) MWQuestionnaireReveiveModel *questionnaireReveiveModel;
 
 
 @end
@@ -843,9 +844,55 @@ MWDLNADeviceShowAlertViewDelegate>
 
 
 - (void)getChatRoomHistoryMessage:(NSString *)lastMessageID {\
-    //1542794020367
+  
     [self.socket getChatRoomHistoryMessageWithLastMessageID:lastMessageID];
 }
+
+//发送问卷答案
+- (void)sendQuestionnaireAnswer {
+ 
+    //5c18b469dcd2370011e49192
+    NSMutableArray *answers = [NSMutableArray array];
+    for (NSInteger i = 0; i < 2 ;i++) {
+        
+        MWQuestionnaireAnswerModel *model = [MWQuestionnaireAnswerModel new];
+        
+        if (i == 0) {
+            model.topicId = @"5c186768aa9e3e0011e8ad4f";
+            model.number = [NSString stringWithFormat:@"%ld",i + 1];
+            model.question = @"please choose on";
+            model.optionSort = @[@"answer 1",@"answer 2",@"answer 3"];
+            model.selectContent = @"answer 1";
+            model.selectId = @"5c186768aa9e3e0011e8ad52";
+            
+        }else {
+            model.topicId = @"5c186768aa9e3e0011e8ad4b";
+            model.number = [NSString stringWithFormat:@"%ld",i + 1];
+            model.question = @"please choose another";
+            model.optionSort = @[@"answer a",@"answer b",@"answer c"];
+            model.selectContent = @"answer b";
+            model.selectId = @"5c186768aa9e3e0011e8ad4d";
+            
+        }
+        [answers addObject:model];
+    }
+    
+    [self.socket sendQuestionnaireAnswerWithNickName:@"测试"
+                                              userId:@"12"
+                                     questionnaireId:self.questionnaireReveiveModel.questionnaireId ? self.questionnaireReveiveModel.questionnaireId : @"5c18b469dcd2370011e49192"
+                                  questionnaireTitle:@"金融安全调查"
+                                   questionnaireType:@"single"
+                                questionnaireAnswers:answers];
+    
+}
+
+//获取问卷统计结果
+- (void)getQuestionnaireResult {
+    
+    [self.socket getQuestionnaireResult:self.questionnaireReveiveModel.questionnaireId ? self.questionnaireReveiveModel.questionnaireId : @"5c18b469dcd2370011e49192"];
+    
+}
+
 
 #pragma mark - BKLandscapePlayViewDelegate
 -(void)landscapePlayViewClickWithButton:(UIButton *)button{
@@ -1295,6 +1342,7 @@ MWDLNADeviceShowAlertViewDelegate>
             self.socket = [[MWLiveSocket alloc] initWithRoomId:[NSString stringWithFormat:@"%@",dataDic[@"out_roomID"]] liveID:self.liveId out_room_ServerAddress:dataDic[@"out_room_ServerAddress"] join_notice:dataDic[@"join_notice"]  user_id:mw_mineUserId nickName:@"sss" headPic:@"" delegate:self response:^(BOOL success, NSString *msg) {
                 
             }];
+            self.socket.isPrintSocketInfo = YES;
         }
     }];
     
@@ -1398,7 +1446,39 @@ MWDLNADeviceShowAlertViewDelegate>
         }
     }else if (code == MWLiveSocket_praise){ //点赞
         [self.chatViewController reviceMsgWithSocketData:socketData];
+    }else if (code == MWliveSocket_questionnaire_getResult) { //收到问卷结果
+        NSLog(@"收到问卷结果");
+        [socketData.liveinfo.statistics enumerateObjectsUsingBlock:^(MWQuestionnaireResultModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSLog(@"问题:%@",obj.question);
+            NSLog(@"问题答案的统计:%@",obj.countSelect);
+        }];
     }
+}
+
+//收到问卷消息：单独处理问卷消息
+- (void)receiveQuestionnaireReveiveMessage:(MWQuestionnaireReveiveModel *)questionnaireReveiveModel {
+    NSLog(@"收到问卷消息");
+    _questionnaireReveiveModel = questionnaireReveiveModel;
+    NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.questionnaireId);
+    NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.date);
+    NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.title);
+    NSLog(@"questionnaireReveiveModel:%@",questionnaireReveiveModel.type);
+    for (MWQuestionnaireReceiveQuestionModel *questionModel in questionnaireReveiveModel.topic) {
+        NSLog(@"questionModel:%@",questionModel.questionId);
+        NSLog(@"questionModel:%@",questionModel.number);
+        NSLog(@"questionModel:%@",questionModel.question);
+
+        for (MWQuestionnaireReceivePQAnswerModel *answerModel in questionModel.options) {
+            
+            NSLog(@"answerModel:%@",answerModel.optionId);
+            NSLog(@"answerModel:%@",answerModel.name);
+            NSLog(@"answerModel:%@",answerModel.content);
+            NSLog(@"answerModel:%d",answerModel.allowAddReasonStatus);
+            
+        }
+    }
+    
+    NSLog(@"上面是问卷消息");
 }
 
 

@@ -44,6 +44,12 @@ KKInputViewDelegate>
 /** 点赞按钮 */
 @property (nonatomic,strong) UIButton *parasButton;
 
+/** 发送问卷答案按钮 */
+@property (nonatomic,strong) UIButton *sendQuestionnaireAnswerButton;
+
+/** 获取问卷结果按钮 */
+@property (nonatomic,strong) UIButton *getQuestionnaireResultButton;
+
 /** 清晰度选择按钮 */
 @property (nonatomic,strong) UIButton *definitionChooseButton;
 
@@ -64,7 +70,7 @@ KKInputViewDelegate>
         
         kWeakSelf(self)
         _gifButton = [UIButton ZFC_ButtonChainedCreater:^(ZFC_ButtonChainedCreater *creater) {
-            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 49 - 60, 80, 49))
+            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 35 - 52, 80, 35))
             .title(@"送礼", UIControlStateNormal)
             .titleLabelFont([UIFont systemFontOfSize:15])
             .titleColor([UIColor redColor], UIControlStateNormal)
@@ -88,7 +94,7 @@ KKInputViewDelegate>
         
         kWeakSelf(self)
         _parasButton = [UIButton ZFC_ButtonChainedCreater:^(ZFC_ButtonChainedCreater *creater) {
-            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 49 - 120, 80, 49))
+            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 35 - 104, 80, 35))
             .title(@"点赞", UIControlStateNormal)
             .titleLabelFont([UIFont systemFontOfSize:15])
             .titleColor([UIColor redColor], UIControlStateNormal)
@@ -111,9 +117,9 @@ KKInputViewDelegate>
         
         kWeakSelf(self)
         _definitionChooseButton = [UIButton ZFC_ButtonChainedCreater:^(ZFC_ButtonChainedCreater *creater) {
-            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 49 - 180, 80, 49))
+            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 35 - 156, 80, 35))
             .title(@"切换清晰度", UIControlStateNormal)
-            .titleLabelFont([UIFont systemFontOfSize:12])
+            .titleLabelFont([UIFont systemFontOfSize:10])
             .titleColor([UIColor redColor], UIControlStateNormal)
             .backgroundColor([UIColor lightGrayColor])
             .actionBlock(^(UIButton *button) {
@@ -134,9 +140,9 @@ KKInputViewDelegate>
         
         kWeakSelf(self)
         _changeShortVideoButton = [UIButton ZFC_ButtonChainedCreater:^(ZFC_ButtonChainedCreater *creater) {
-            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 49 - 240, 80, 49))
+            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 35 - 208, 80, 35))
             .title(@"切换小视频", UIControlStateNormal)
-            .titleLabelFont([UIFont systemFontOfSize:12])
+            .titleLabelFont([UIFont systemFontOfSize:10])
             .titleColor([UIColor redColor], UIControlStateNormal)
             .backgroundColor([UIColor lightGrayColor])
             .actionBlock(^(UIButton *button) {
@@ -152,6 +158,54 @@ KKInputViewDelegate>
     return _changeShortVideoButton;
 }
 
+- (UIButton *)sendQuestionnaireAnswerButton{
+    
+    if (_sendQuestionnaireAnswerButton == nil) {
+        
+        kWeakSelf(self)
+        _sendQuestionnaireAnswerButton = [UIButton ZFC_ButtonChainedCreater:^(ZFC_ButtonChainedCreater *creater) {
+            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 35 - 260, 80, 35))
+            .title(@"发送问卷答案", UIControlStateNormal)
+            .titleLabelFont([UIFont systemFontOfSize:10])
+            .titleColor([UIColor redColor], UIControlStateNormal)
+            .backgroundColor([UIColor lightGrayColor])
+            .actionBlock(^(UIButton *button) {
+                
+                if ([weakself.delegate respondsToSelector:@selector(sendQuestionnaireAnswer)]) {
+                    [weakself.delegate sendQuestionnaireAnswer];
+                }
+                
+            });
+        }];
+        
+    }
+    return _sendQuestionnaireAnswerButton;
+}
+
+- (UIButton *)getQuestionnaireResultButton {
+    
+    if (_getQuestionnaireResultButton == nil) {
+        
+        kWeakSelf(self)
+        _getQuestionnaireResultButton = [UIButton ZFC_ButtonChainedCreater:^(ZFC_ButtonChainedCreater *creater) {
+            creater.frame(CGRectMake(kScreenWidth - 80, kScreenHeight  - kScreenWidth*9/16  - 44 - 35 - 312, 80, 35))
+            .title(@"获取问卷统计结果", UIControlStateNormal)
+            .titleLabelFont([UIFont systemFontOfSize:10])
+            .titleColor([UIColor redColor], UIControlStateNormal)
+            .backgroundColor([UIColor lightGrayColor])
+            .actionBlock(^(UIButton *button) {
+                
+                if ([weakself.delegate respondsToSelector:@selector(getQuestionnaireResult)]) {
+                    [weakself.delegate getQuestionnaireResult];
+                }
+                
+            });
+        }];
+        
+    }
+    return _getQuestionnaireResultButton;
+    
+}
 
 
 - (instancetype)init
@@ -318,6 +372,8 @@ KKInputViewDelegate>
     [self.view addSubview:self.parasButton];
     [self.view addSubview:self.definitionChooseButton];
     [self.view addSubview:self.changeShortVideoButton];
+    [self.view addSubview:self.sendQuestionnaireAnswerButton];
+    [self.view addSubview:self.getQuestionnaireResultButton];
     
 }
 
