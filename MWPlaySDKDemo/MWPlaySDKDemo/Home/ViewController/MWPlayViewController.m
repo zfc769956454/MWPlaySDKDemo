@@ -1301,7 +1301,9 @@ MWDLNADeviceShowAlertViewDelegate>
     
 }
 
-- (void)receiveSocketMessage:(MWLiveSocketData *)socketData {
+- (void)receiveSocketMessage:(NSDictionary *)socketDic {
+    
+    MWLiveSocketData  *socketData = [MWLiveSocketData mj_objectWithKeyValues:socketDic];
     
     [self.landscapePlayView manageReceiveSocketMessage:socketData];
     
@@ -1399,6 +1401,9 @@ MWDLNADeviceShowAlertViewDelegate>
         }
     }else if (code == MWLiveSocket_praise){ //点赞
         [self.chatViewController reviceMsgWithSocketData:socketData];
+    }else if (code == MWliveSocket_receiveQuestionnaire) { //问卷
+        //webview加载此url http://nx.facebac.com/H5/survey.html?examineId=9
+        NSLog(@"问卷url:%@",socketData.liveinfo.url);
     }
 }
 

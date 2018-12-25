@@ -410,15 +410,10 @@ KKInputViewDelegate>
             });
         }else{
             
-            if (info.code == MWLiveSocket_obtainChatRecord) {
-                [self.dataSource insertObject:data atIndex:0];
-                [self.tableView reloadData];
-            }else {
-                [self.dataSource safeAddObject:data];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [self scrollToLast];
-                });
-            }
+            [self.dataSource safeAddObject:data];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self scrollToLast];
+            });
         }
     });
 }
@@ -431,10 +426,6 @@ KKInputViewDelegate>
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        MWCommentData *firstObj = self.dataSource.firstObject ;
-        if(self.dataSource.count > 0) {
-            [self.dataSource removeObjectAtIndex:0];
-        }
         for(NSInteger i = infoArray.count - 1; i >= 0; i--){
             MWLiveSocketData *info = infoArray[i];
             MWCommentData *data = [[MWCommentData alloc]init];
@@ -445,7 +436,6 @@ KKInputViewDelegate>
             data.lineSpace = [MWChatMsgCell fetchLineSpace];
             [self.dataSource insertObject:data atIndex:0];
         }
-        [self.dataSource insertObject:firstObj atIndex:0];
         [self.tableView reloadData];
     });
     

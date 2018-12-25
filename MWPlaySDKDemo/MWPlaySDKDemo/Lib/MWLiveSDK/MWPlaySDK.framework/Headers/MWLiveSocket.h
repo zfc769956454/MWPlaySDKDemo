@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MWLiveSocketData.h"
-
 
 
 //SOCKET 的连接状态
@@ -39,6 +37,8 @@ static NSInteger const MWLiveSocket_obtainChatRecord       = 2020;//分段获取
 static NSInteger const MWliveSocket_deletSingleChatRecord  = 2022;//清除单条聊天记录
 static NSInteger const MWliveSocket_shutupUserAll          = 2024;//全体禁言
 
+static NSInteger const MWliveSocket_receiveQuestionnaire   = 2120;//收到问卷消息
+
 static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消息
 
 
@@ -47,7 +47,7 @@ static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消
  */
 @protocol MWLiveSocketDelegate <NSObject>
 
-- (void)receiveSocketMessage:(MWLiveSocketData *)scoketData;
+- (void)receiveSocketMessage:(NSDictionary *)socketDic;
 
 @end
 
@@ -225,5 +225,13 @@ static NSInteger const MWLiveSocket_LiveNotice             = 5001;//公告栏消
 
 
 
+/**
+ 发送自定义信令的消息，用于扩展新增信令，需与聊天室人员协商
 
+ @param customSignallingDic 自定义消息字典
+ */
+- (void)sendCustomSignalling:(NSDictionary *)customSignallingDic;
 @end
+
+
+
