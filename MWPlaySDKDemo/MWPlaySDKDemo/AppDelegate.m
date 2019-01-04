@@ -28,9 +28,9 @@
     [self.window makeKeyWindow];
     
     
-    [[MWSDKConfigHelper sharedInstance] initWithSDKVersion:SDKVersion sdkVersionKey:SDKKey response:^(BOOL success, NSString *msg) {
-        NSLog(@"%@",msg);
-    }];
+//    [[MWSDKConfigHelper sharedInstance] initWithSDKVersion:SDKVersion sdkVersionKey:SDKKey response:^(BOOL success, NSString *msg) {
+//        NSLog(@"%@",msg);
+//    }];
     
     return YES;
 }

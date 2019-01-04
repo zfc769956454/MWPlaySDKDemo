@@ -275,15 +275,19 @@
 
 - (void)checkSDKState:(void(^)(BOOL success))response {
     
-    if (![MWSDKConfigHelper sharedInstance].sdkState) {
-        [[MWSDKConfigHelper sharedInstance] initWithSDKVersion:SDKVersion sdkVersionKey:SDKKey response:^(BOOL success, NSString *msg) {
-            if (response) {
-                response(success);
-            }
-        }];
-    }else {
+    if (response) {
         response(YES);
     }
+    
+//    if (![MWSDKConfigHelper sharedInstance].sdkState) {
+//        [[MWSDKConfigHelper sharedInstance] initWithSDKVersion:SDKVersion sdkVersionKey:SDKKey response:^(BOOL success, NSString *msg) {
+//            if (response) {
+//                response(success);
+//            }
+//        }];
+//    }else {
+//        response(YES);
+//    }
 }
 
 //播放直播

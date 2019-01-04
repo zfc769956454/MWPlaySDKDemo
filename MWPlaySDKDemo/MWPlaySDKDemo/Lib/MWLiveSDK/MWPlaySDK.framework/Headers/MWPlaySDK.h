@@ -22,6 +22,6 @@ FOUNDATION_EXPORT const unsigned char MWPlaySDKVersionString[];
 #import <MWPlaySDK/MWVideoPlayer.h>
 #import <MWPlaySDK/MWPlayerCallbackDelegate.h>
 #import <MWPlaySDK/MWLiveSocket.h>
-#import <MWPlaySDK/MWSDKConfigHelper.h>
+
 
 

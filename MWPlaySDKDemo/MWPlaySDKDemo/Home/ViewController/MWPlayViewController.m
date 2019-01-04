@@ -26,6 +26,7 @@
 #import <AVKit/AVKit.h>
 #import <MRDLNA/MRDLNA.h>
 #import "MWDLNADeviceShowAlertView.h"
+#import "MWEnterIntoLiveRoomAnimationManger.h"
 
 
 #define SecondaryVideoPlayerWidth  120   //次屏播放器宽
@@ -122,10 +123,13 @@ MWDLNADeviceShowAlertViewDelegate>
 /** 当前DLNA设备的名称 */
 @property (nonatomic, strong) NSString *currentDLNADeviceName;
 
+/** 聊天室进入动画 */
+@property (nonatomic, strong) MWEnterIntoLiveRoomAnimationManger *enterIntoLiveRoomAnimationManger;
 
 @end
 
 @implementation MWPlayViewController
+
 
 #pragma mark - ******************life 部分*******************
 - (instancetype)init
@@ -486,6 +490,9 @@ MWDLNADeviceShowAlertViewDelegate>
     }
     [self dismissViewControllerAnimated:YES completion:nil];
     
+    [self.enterIntoLiveRoomAnimationManger removeEnterIntoView];
+    
+    
 }
 
 
@@ -747,7 +754,7 @@ MWDLNADeviceShowAlertViewDelegate>
 
 #pragma mark - MWLiveChatViewControllerDelegate
 -(void)sendMsg:(NSString *)inputText {
-    [self.socket sendMessageWithText:inputText nickName:@"测试" userId:mw_fromUserId headPic:@""];
+    [self.socket sendMessageWithText:inputText nickName:@"测试" userId:mw_mineUserId headPic:@""];
 }
 
 
@@ -1122,6 +1129,7 @@ MWDLNADeviceShowAlertViewDelegate>
     [self.view addSubview:self.pmsManger.player];
     [self.view addSubview:self.playerMaskView];
     
+    NSLog(@"%@",self.pmsManger.definitionModel.playUrl);
     
     //有次流
     if (self.pssManger.definitionModel.playUrl.length > 0) {
@@ -1313,7 +1321,22 @@ MWDLNADeviceShowAlertViewDelegate>
         [self.chatViewController reviceMsgWithSocketData:socketData];
     }else if (code == MWLiveSocket_joinRoom /**加入房间*/) {
         
-        
+        //用于模拟多人同时进入
+//        NSArray *niceName = @[@"撒大声地所",@"dd",@"dddaa",@"啊但是所大付所多撒多所多撒",@"多试试",@"是的撒所",@"大多数",@"的"];
+//        [[MWGCDTimerManager sharedInstance] scheduledDispatchTimerWithName:@"sdsds"  timeInterval:0.1 queue:nil repeats:YES action:^{
+//            static int index = 0;
+//            if (index < 10) {
+//                 NSLog(@"进来了");
+//                 [self.enterIntoLiveRoomAnimationManger showEnterIntoAnimationWithNickName:niceName[arc4random()%8]];
+//            }
+//            index ++;
+//            if (index > 20) {
+//                index = 0;
+//            }
+//        }];
+       
+        [self.enterIntoLiveRoomAnimationManger showEnterIntoAnimationWithNickName:socketData.nickName];
+       
     }else if (code == MWLiveSocket_leaceRoom /**离开房间*/) {
         
     }else if (code == MWLiveSocket_presentGift /**接收到礼物*/) {
@@ -1616,7 +1639,13 @@ MWDLNADeviceShowAlertViewDelegate>
     return _dlnaAlertView;
 }
 
-
+- (MWEnterIntoLiveRoomAnimationManger *)enterIntoLiveRoomAnimationManger {
+    
+    if (_enterIntoLiveRoomAnimationManger == nil) {
+        _enterIntoLiveRoomAnimationManger = [[MWEnterIntoLiveRoomAnimationManger alloc] init];
+    }
+    return _enterIntoLiveRoomAnimationManger;
+}
 
 @end
 

@@ -10,8 +10,6 @@
 #define WMLiveConfig_h
 
 
-
-#define  mw_fromUserId @"1178518168554764886"
 #define  mw_mineUserId @"1178518168554764892"
 
 #define  SDKVersion @"1.0.0"

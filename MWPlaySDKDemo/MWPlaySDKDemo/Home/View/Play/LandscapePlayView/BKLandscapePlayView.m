@@ -268,7 +268,7 @@
     if (_isCloseBarrage) {
         return;
     }
-    [self.socket sendMessageWithText:message nickName:@"测试" userId:mw_fromUserId headPic:@""];
+    [self.socket sendMessageWithText:message nickName:@"测试" userId:mw_mineUserId headPic:@""];
 
 }
 
